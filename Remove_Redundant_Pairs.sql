@@ -23,7 +23,7 @@ FROM SqlQueries..BrandData
 -- For pairs of brands in the same year
 	-- If custom1 = custom3 and custom2 = custom4 keep only one pair
 -- For pairs of brands in the same year
-	-- If custom1 = custom3 and custom2 = custom4 keep both pairs
+	-- If custom1 != custom3 and custom2 != custom4 keep both pairs
 -- For brands that do not have pairs in the same year, keep those rows
 
 WITH cte1 AS(
